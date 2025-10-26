@@ -1,0 +1,6 @@
+- name: pb on sample execution of pb
+  hosts: all
+  tasks:
+    - name: code to create directory
+      command:
+        cmd: mkdir /opt/FILE_TWO
