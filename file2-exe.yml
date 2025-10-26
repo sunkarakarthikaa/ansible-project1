@@ -1,6 +1,11 @@
-- name: pb on sample execution of pb
-  hosts: all
-  tasks:
-    - name: code to create directory
-      command:
-        cmd: mkdir /opt/FILE_TWO
+- 
+ name: Create directory and file
+ hosts: all
+ tasks:
+  - name: Create /opt/hyd directory
+    command:
+      cmd: mkdir /opt/hyd
+
+  - name: Create india.txt inside /opt/hyd
+    command:
+      cmd: touch /opt/hyd/india.txt
