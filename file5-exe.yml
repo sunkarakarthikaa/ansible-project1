@@ -1,5 +1,6 @@
-- name: Replace text in /opt/xyz/vnr.txt
+-
+  name: Replace text in /opt/xyz/vnr.txt
   lineinfile:
     path: /opt/xyz/vnr.txt
-    regexp: '.*'        
+    regexp: '.*'
     line: "hello world"
