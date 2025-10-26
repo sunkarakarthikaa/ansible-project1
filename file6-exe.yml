@@ -1,0 +1,5 @@
+- name: Download software from Google Drive to client
+  get_url:
+    url: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"
+    dest: "/opt/software/software_name.ext"
+    mode: '0755'
