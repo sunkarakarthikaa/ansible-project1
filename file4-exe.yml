@@ -1,0 +1,19 @@
+- 
+ name: Create folder, file, and write text
+ hosts: all
+ tasks:
+   - name: Create /opt/xyz directory
+     file:
+      path: /opt/xyz
+      state: directory
+
+   - name: Create /opt/xyz/vnr.txt file
+     file:
+      path: /opt/xyz/vnr.txt
+      state: touch
+
+   - name: Write text into /opt/xyz/vnr.txt
+     lineinfile:
+       path: /opt/xyz/vnr.txt
+       line: "welcome to vnr"
+       state: present
