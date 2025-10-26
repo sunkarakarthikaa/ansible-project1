@@ -1,0 +1,13 @@
+- 
+ name: Create directory and file using file module
+ hosts: all
+ tasks:
+   - name: Create /opt/asia directory
+     file:
+       path: /opt/asia
+       state: directory
+
+   - name: Create /opt/asia/new_delhi file
+     file:
+       path: /opt/asia/new_delhi
+       state: touch
